@@ -66,6 +66,7 @@ nav {
 
     .root {
         overflow-x: hidden;
+        position: relative;
     }
 
     .nav-list {
