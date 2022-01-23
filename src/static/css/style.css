@@ -14,20 +14,14 @@ nav .logo{
     opacity: 0.7;
 }
 
-a {
+.nav-list a {
     color: #000;
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hover {
+.nav-list a:hover {
     opacity: 0.7;
-}
-
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
 }
 
 nav {
@@ -35,13 +29,14 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #fff;
-    height: 10vh;
+    height: 8vh;
     border-bottom: 1px solid #76ACA1;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    padding-top: 1.5vh;
 }
 
 .nav-list li {
@@ -71,17 +66,19 @@ nav {
 
     .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 7.8vh;
         right: 0;
         width: 50vw;
         height: 92vh;
         background: #fff;
+        border-bottom: 1px solid #76ACA1;
         border-left: 1px solid #76ACA1;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        z-index: 10;
     }
     .nav-list li {
         margin-left: 0;
