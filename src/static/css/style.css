@@ -4,7 +4,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-.logo{
+nav .logo{
     display: block;
     height: 8vh;
     transition: 0.3s;
@@ -118,4 +118,18 @@ nav {
 
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: whitesmoke;
+    font-size: large;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
 }
