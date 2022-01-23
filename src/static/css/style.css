@@ -35,7 +35,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: whitesmoke;
-    height: 8vh;
+    height: 10vh;
     border-bottom: 1px solid #76ACA1;
 }
 
@@ -120,16 +120,86 @@ nav {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.section-whites {
+    background-color: #fff;
+}
+
+.section-color {
+    background-color: #EAFEFA;
+}
+
+/* Inicio */
+
+
 #inicio {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: whitesmoke;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
-.sobre-container {
-    display: flex;
+/* Sobre */
+#sobre {
+    position: relative;
     align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.3rem;
+}
+
+.cv-item {
+    position: relative;
+    padding: 0px 0 20px 0px;
+    margin-top: -2px;
+
+}
+
+/* Servicos  */
+#servicos {
+    position: relative;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.3rem;
+}
+
+.cv .cv-title {
+    padding-bottom: 20px;
+}
+
+.cv .cv-item-s {
+    padding: 0px 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #76ACA1;
+    position: relative;
+}
+
+.cv .cv-item-s::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #76ACA1;
     background: whitesmoke;
+    border-radius: 50%;
+}
+
+#servicos .container .row .cv-item-s .social-links a {
+    font-size: 0.7rem;
+    background: #76ACA1;
+    color: #fff;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#servicos .container .row .cv-item-s .social-links a:hover {
+    background: #8dddcd;
+}
+
+/* Contato */
+#btn-enviar-loader{
+    display: none;
 }

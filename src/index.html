@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lacas</title>
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -26,33 +28,138 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#sobre" onclick="handleClick()">Sobre</a></li>
+                    <li><a href="#servicos" onclick="handleClick()">Serviços</a></li>
+                    <li><a href="#contato" onclick="handleClick()">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- inicio -->
-        <section id="inicio">
-            <h1 class="home-title">Bem vindo a Lacas,<br> a melhor em serviço</br></h1>
+        <section id="inicio" class="section-whites">
+            <h1 class="home-title">Bem vindo <span>Lacas</span>,<br> a melhor em serviço</br></h1>
             <img src="static/images/logo-lacas.png" alt="logo-lacas" href="#inicio" class="logo">
         </section>
 
         <!-- Sobre -->
-        <section id="sobre">
-            <div class="container-sobre">
-                <h1 class="sobre-title">Sobre</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi sem, congue eu pharetra eget, dictum
-                    at turpis. Nulla facilisi. Morbi fermentum magna in tristique tempus. Duis sit amet risus ac nisl
-                    fermentum mollis sed id ligula. In ultrices massa non mi euismod facilisis. In dapibus ut nunc eu
-                    malesuada. Vivamus ac lorem commodo, eleifend dolor a, scelerisque nunc. Nulla facilisi. Phasellus porta
-                    odio a sodales dignissim. Praesent malesuada tempor lectus ut venenatis.Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Praesent mi sem, congue eu pharetra eget, dictum at turpis. Nulla facilisi.
-                    Morbi fermentum magna in tristique tempus. Duis sit amet risus ac nisl fermentum mollis sed id ligula.
-                    In ultrices massa non mi euismod facilisis. In dapibus ut nunc eu malesuada.</p>
+        <section class="section-color cv" id="sobre">
+            <div class="container">
+                <h2 class="cv-title">Sobre</h2>
+                <div class='cv-item' data-anime="up">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi sem, congue eu pharetra eget,
+                        dictum
+                        at turpis. Nulla facilisi. Morbi fermentum magna in tristique tempus. Duis sit amet risus ac nisl
+                        fermentum mollis sed id ligula. In ultrices massa non mi euismod facilisis. In dapibus ut nunc eu
+                        malesuada. Vivamus ac lorem commodo, eleifend dolor a, scelerisque nunc. Nulla facilisi. Phasellus
+                        porta
+                        odio a sodales dignissim. Praesent malesuada tempor lectus ut venenatis.Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Praesent mi sem, congue eu pharetra eget, dictum at turpis. Nulla
+                        facilisi.
+                        Morbi fermentum magna in tristique tempus. Duis sit amet risus ac nisl fermentum mollis sed id
+                        ligula.
+                        In ultrices massa non mi euismod facilisis. In dapibus ut nunc eu malesuada.</p>
+                </div>
             </div>
         </section>
+
+        <!-- Servicos -->
+        <section class="section-whites cv" id="servicos">
+            <div class="container">
+                <h2 class="cv-title">Servicos</h2>
+                <div class="row">
+                    <div class="">
+                        <div class='cv-item-s' data-anime="up">
+                            <h4>Servico 1</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum erat ac lacus
+                                pulvinar, in interdum justo bibendum. Etiam laoreet lacus nec augue mollis, ac dignissim
+                                lectus euismod. Aliquam semper sodales odio sed dignissim. Donec aliquet cursus mauris
+                                ut dignissim. Nunc vehicula lobortis iaculis.</p>
+                            <div class="social-links">
+                                <a target="_blank" href="exemploprojeto.html">
+                                    <i class="bi bi-globe"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='cv-item-s' data-anime="up">
+                            <h4>Servico 2</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum erat ac lacus
+                                pulvinar, in interdum justo bibendum. Etiam laoreet lacus nec augue mollis, ac dignissim
+                                lectus euismod. Aliquam semper sodales odio sed dignissim. Donec aliquet cursus mauris
+                                ut dignissim. Nunc vehicula lobortis iaculis.</p>
+                            <div class="social-links">
+                                <a target="_blank" href="exemploprojeto.html">
+                                    <i class="bi bi-globe"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='cv-item-s' data-anime="up">
+                            <h4>Servico 3</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum erat ac lacus
+                                pulvinar, in interdum justo bibendum. Etiam laoreet lacus nec augue mollis, ac dignissim
+                                lectus euismod. Aliquam semper sodales odio sed dignissim. Donec aliquet cursus mauris
+                                ut dignissim. Nunc vehicula lobortis iaculis.</p>
+                            <div class="social-links">
+                                <a target="_blank" href="exemploprojeto.html">
+                                    <i class="bi bi-globe"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Contato -->
+        <section  class="mt-5 section-color" id="contato">
+            <div class="container mb-5">
+                <h2 class='pt-3 pb-3'>Contato</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card p-5 shadow border-0" id="cardb" data-anime="up">
+                            <div class="endereco">
+                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                                <p>Campina Grande, PB</p>
+                            </div>
+                            <div class="email">
+                                <h4><i class="bi bi-envelope"></i> Email:</h4>
+                                <p>exemplo@gmail.com</p>
+                                <h4><i class="bi bi-telephone"></i> Contato:</h4>
+                                <p>+55  (83) 99999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
+                            <form class="row g-3" action='/send' method="POST">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" name='nome'
+                                        placeholder='Digite seu nome' required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" name='email'
+                                        placeholder='Digite seu email' required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem:</label>
+                                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
+                                        placeholder="Digite sua mensagem" required></textarea>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center mt-4">
+                                    <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
+                                        mensagem</button>
+                                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Enviando...
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </div>
 
