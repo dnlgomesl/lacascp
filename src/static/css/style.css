@@ -200,3 +200,18 @@ nav {
 #btn-enviar-loader{
     display: none;
 }
+
+.contato {
+    margin-bottom: -7vh;
+    height: 110vh;
+}
+
+/* Footer */
+#footer{
+    position: static;
+    width: auto;
+    height: 15vh;
+    padding: 38px 15px;
+    background-color: #76ACA1;
+    transition: .3s;
+}
