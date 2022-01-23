@@ -34,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: whitesmoke;
+    background: #fff;
     height: 10vh;
     border-bottom: 1px solid #76ACA1;
 }
@@ -75,7 +75,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: whitesmoke;
+        background: #fff;
         border-left: 1px solid #76ACA1;
         flex-direction: column;
         align-items: center;
@@ -180,7 +180,7 @@ nav {
     width: 16px;
     height: 16px;
     border: 2px solid #76ACA1;
-    background: whitesmoke;
+    background: #fff;
     border-radius: 50%;
 }
 
