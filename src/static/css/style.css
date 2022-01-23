@@ -58,7 +58,6 @@ nav {
 }
 
 @media (max-width: 999px) {
-
     .root {
         overflow-x: hidden;
         position: relative;
