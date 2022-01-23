@@ -184,7 +184,7 @@ nav {
     border-radius: 50%;
 }
 
-#servicos .container .row .cv-item-s .social-links a {
+#servicos .container .row .cv-item-s .social-links .a {
     font-size: 0.7rem;
     background: #76ACA1;
     color: #fff;
@@ -195,7 +195,7 @@ nav {
     text-decoration: none;
 }
 
-#servicos .container .row .cv-item-s .social-links a:hover {
+#servicos .container .row .cv-item-s .social-links .a:hover {
     background: #8dddcd;
 }
 
